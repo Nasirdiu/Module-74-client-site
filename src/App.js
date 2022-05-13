@@ -7,6 +7,8 @@ import Login from "./Pages/Login/Login/Login";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 import SingUp from "./Pages/Login/SingUp/SingUp";
 import Navbar from "./Pages/Share/Navbar/Navbar";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="max-w-7xl mx-auto">
@@ -21,6 +23,7 @@ function App() {
         <Route path="/singUp" element={<SingUp />} />
         <Route path="about" element={<About />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
