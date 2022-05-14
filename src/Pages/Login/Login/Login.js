@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import Loading from "../../Share/Loading/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { async } from "@firebase/util";
+
 const Login = () => {
   const {
     register,
